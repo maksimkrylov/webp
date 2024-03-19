@@ -1,0 +1,14 @@
+export interface BuildPaths{
+ entry: string,
+ html: string,
+ output: string,
+ src: string
+}
+export type BuildMode = 'production' | 'development'
+
+export interface BuilOptions {
+  port: number,
+  paths: BuildPaths,
+  mode: BuildMode,
+  analyzer?: boolean 
+}
