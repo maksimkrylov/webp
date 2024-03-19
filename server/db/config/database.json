@@ -1,0 +1,15 @@
+{
+  "development": {
+    "username": "posttweet_user",
+    "password": "zXwUxmKVr3MibiPzoNsdG39rHYWV0GXw",
+    "database": "posttweet",
+    "host": "dpg-cn2d3hicn0vc738vc920-a.frankfurt-postgres.render.com",
+    "dialect": "postgres",
+    "ssl": true,
+    "dialectOptions": {
+      "ssl": {
+        "require": true
+      }
+    }
+  }
+}

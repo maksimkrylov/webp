@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "noImplicitAny": false,
+    "module": "ESNext",
+    "target": "es5",
+    "jsx": "react-jsx",
+    "allowJs": true,
+    "moduleResolution": "node",
+
+    "allowSyntheticDefaultImports": true, // добавляет дефолтные импорты библиотекам у которых их нет
+    "esModuleInterop": true, //
+    "paths": {
+      "@/*": ["./src/*"] // резолвинг путей. заменяет путь до src на "@"
+    }
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  }
+}

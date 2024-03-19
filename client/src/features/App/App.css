@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: var(--color-background);
+}
+
+/* #007bff-красивый цвет */
+/* #0e1b40 - темно синий hover */
+
+:root {
+  --primary-color: #6c72ff;
+  --dark-hover: #0e1b40;
+
+
+  --color-bg-body: #edeef0;
+  --color-bg-navbar: #ffffff;
+  --color-bg-post: #ffffff;
+  --color-text: #000000;
+  --color-btn-all: #ffffff;
+  --color-chat-all: #ffffff;
+  --color-avatar-chat: #ffffff;
+
+  /* --color-font: black;
+  --bg-item: #ffffff; */
+
+}
+
+html[data-theme='Тёмная тема'] {
+  --color-bg-body: #141414;
+  --color-bg-navbar: #222222;
+  --color-bg-post: #222222;
+  --color-text: #ffffff;
+  --color-btn-all: #ffffff;
+  --color-chat-all: #222222;
+  --color-avatar-chat: #ffffff;
+
+  /* --color-font: white;
+  --bg-item: #4d4a4a; */
+  /* --color-background: #222222;
+  --color-backround: #141414;
+ 
+ 
+  background-color: var(--vkui--color_header_background);
+
+  --color-bg-body: #141414;
+  --color-bg-navbar: #222222;
+  --color-bg-post: #222222; */
+}

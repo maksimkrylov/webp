@@ -1,0 +1,95 @@
+.containerHeader {
+    display: flex;
+    flex-direction: row;
+    min-width: 1024px;
+    max-width: 1280px;
+    max-height: 500px;
+    margin: auto auto;
+    background: #ffffff;
+    border-radius: 4px;
+    box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, .22);
+}
+
+.boxImg {
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    overflow: hidden;
+}
+
+.boxImg img {
+    width: 105%;
+    height: 100%;
+    object-fit: cover; 
+    object-position: -15px;
+}
+
+
+.boxTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.svg {
+    width: 50px;
+}
+
+
+
+.boxTitle>h1 {
+    margin-bottom: 10px;
+}
+
+.btn {
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--primary-color);
+    width: 250px;
+    border-radius: 24px;
+    text-align: center;
+    padding: 10px 40px;
+    font-size: 14px;
+    font-weight: 700;
+    box-shadow: 0px 2px 6px -1px rgba(0, 0, 0, .13);
+    border: none;
+    transition: all .3s ease;
+    outline: 0;
+    margin-bottom: 20px;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    background: var(--dark-hover);
+    box-shadow: 0 2px 6px -1px rgba(108, 114, 255, 0.5);
+}
+
+.btn:active {
+    transform: scale(.99);
+    box-shadow: 0px 2px 6px -1px rgba(108, 114, 255, 0.5);
+}
+
+.btnDemo {
+    color: var(--primary-color);
+    background: none;
+    border: none;
+    font-size: inherit;
+    font-weight: inherit;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.btnDemo:hover {
+    color: var(--dark-hover)
+}
+
+.boxFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

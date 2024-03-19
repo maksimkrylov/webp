@@ -1,0 +1,100 @@
+.header {
+  width: 100vw;
+  /* Ширина на всю ширину видимой области экрана */
+  height: auto;
+  /* border-bottom: 1px solid #a9a9a9; */
+  /* Подчеркивание */
+  background: var(--color-bg-navbar);
+  color: var(--color-text);
+}
+
+.container {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.leftBox,
+.rightBox {
+  display: flex;
+  align-items: flex-end;
+}
+
+.item {
+  margin-right: 20px;
+  padding: 20px;
+  position: relative;
+  /* добавляем отступ между элементами */
+}
+
+.link {
+  text-decoration: none;
+  color: var(--color-font);
+  font-weight: bold;
+}
+
+.active {
+  color: var(--primary-color);
+}
+
+.active::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--primary-color);
+  /* Цвет подчеркивания */
+  position: absolute;
+  bottom: -2px;
+  /* Расположение подчеркивания относительно ссылки */
+  left: 0;
+}
+
+.link:hover {
+  color: var(--primary-color);
+  /* цвет при наведении */
+}
+
+.nowork {
+  color: rgb(217, 214, 214);
+}
+
+.btn {
+  text-decoration: none;
+  color: #fff;
+  background-color: var(--primary-color);
+  width: 250px;
+  border-radius: 24px;
+  text-align: center;
+  padding: 10px 40px;
+  font-size: 14px;
+  font-weight: 700;
+  box-shadow: 0px 2px 6px -1px rgba(0, 0, 0, 0.13);
+  border: none;
+  transition: all 0.3s ease;
+  outline: 0;
+  margin-bottom: 20px;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  background: var(--dark-hover);
+  box-shadow: 0 2px 6px -1px rgba(108, 114, 255, 0.5);
+}
+
+.btn:active {
+  transform: scale(0.99);
+  box-shadow: 0px 2px 6px -1px rgba(108, 114, 255, 0.5);
+}
+
+.itemTheme {
+  margin-left: 500px;
+  padding-top: 5px;
+}

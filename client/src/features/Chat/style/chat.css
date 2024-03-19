@@ -1,0 +1,261 @@
+.slds-chat {
+  /* max-width: 600px; */
+
+  width: 900px;
+  min-height: 85vh;
+  max-height: 85vh;
+  /* Максимальная ширина чата */
+  margin: 0 auto;
+  /* Центрирование чата на странице */
+  border-radius: 10px;
+  /* Закругленные углы для чата */
+  /* overflow: hidden; */
+  /* Предотвращает прокрутку чата */
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+  /* Тень для чата */
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: var(--color-chat-all);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  color: var(--color-text);
+  margin-left: 10px;
+}
+
+.btn {
+  background-color: var(--primary-color);
+  color: var(--color-text);
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  color: var(--color-btn-all);
+  height: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.btn:hover {
+  background-color: var(--dark-hover);
+}
+
+.input {
+  color: #000000
+}
+
+.input::file-selector-button {
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  height: 50px;
+  color: var(--color-btn-all);
+}
+
+.input::file-selector-button:hover {
+  background-color: var(--dark-hover);
+}
+
+.containber-all {
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-bg-body);
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container-nav-left {}
+
+.container-chat {}
+
+.slds-chat-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow-y: auto;
+  /* Разрешаем прокрутку для содержимого */
+}
+
+.slds-chat-listitem {
+  margin: 10px 0;
+}
+
+.slds-chat-bookend {
+  display: flex;
+  align-items: center;
+  color: #666;
+  padding: 10px;
+  background-color: #f5f5f5;
+  /* Цвет фона для концов чата */
+}
+
+.slds-chat-message-inbound,
+.slds-chat-message-outbound {
+  display: flex;
+  padding: 10px;
+  flex-direction: row;
+}
+
+.slds-chat-message-inbound {
+  align-items: flex-start;
+}
+
+.slds-chat-message-outbound {
+  align-items: flex-end;
+}
+
+.slds-avatar {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border-radius: 50%;
+  color: var(--color-avatar-chat);
+  /* Закругленные углы для аватаров */
+}
+
+.slds-chat-message__body-inbound,
+.slds-chat-message__body-outbound {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.slds-chat-message__body-outbound {
+  align-items: flex-end;
+}
+
+.slds-chat-message__body-inbound {
+  align-items: flex-start;
+}
+
+.slds-chat-message__text {
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  /* Закругленные углы для окна сообщения */
+}
+
+.slds-chat-message__text_inbound {
+  background-color: #e0e0e0;
+  /* Цвет фона для входящих сообщений */
+  /* margin-right: 20vh; */
+  width: fit-content;
+  min-width: 100px;
+}
+
+.slds-chat-message__text_outbound {
+  background-color: #0070d2;
+  /* Цвет фона для исходящих сообщений */
+  color: #fff;
+  /* Цвет текста для исходящих сообщений */
+  /* margin-right: 200vh; */
+  width: fit-content;
+  min-width: 100px;
+  /* margin-left: 51vh */
+}
+
+.slds-chat-message__meta {
+  /* margin-left: 20vh; */
+  font-size: 12px;
+  color: #999;
+  margin-top: 5px;
+}
+
+.slds-chat-event {
+  display: flex;
+  align-items: center;
+  color: #666;
+  padding: 10px;
+  background-color: #f5f5f5;
+  /* Цвет фона для событий чата */
+}
+
+.slds-chat-event__agent-message {
+  background-color: #fff;
+  /* Цвет фона для сообщений агента */
+  padding: 10px;
+  border-radius: 10px;
+  /* Закругленные углы для окна сообщения агента */
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  /* Ширина полосы прокрутки */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  /* Тень для полосы прокрутки */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #bbc1c5;
+  /* Цвет ползунка */
+  border-radius: 10px;
+  /* Закругление углов ползунка */
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  /* Прозрачный фон заглушки */
+}
+
+.input-container input[type='text'] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.input-container button[type='submit'] {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin-left: 10px;
+  /* Пространство между инпутом и кнопкой */
+}
+
+.input-container button[type='submit']:hover {
+  cursor: pointer;
+}
+
+.input-container button[type='submit'] img {
+  width: 24px;
+  /* Установите ширину и высоту изображения по вашему усмотрению */
+  height: 24px;
+}
+
+.topPanel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+  color: #666;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.link-style {
+  text-decoration: none;
+  /* отключение подчеркивания */
+  color: inherit;
+  /* наследование цвета текста */
+}
+
+.receiverAva {
+  margin-right: 15px;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+}

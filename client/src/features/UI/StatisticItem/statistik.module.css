@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1024px;
+  background-color: var(--primary-color);
+  margin: 0 auto;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding-bottom: 30px;
+}
+
+.one,
+.two,
+.fre {
+  text-align: center;
+
+}
+
+.one,
+.two,
+.fre {
+  flex: 1;
+  padding: 20px;
+}
+
+.one,
+.two,
+.fre>p {
+  color: white;
+}
+
+
+.count {
+  font-size: 45px;
+}
